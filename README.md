@@ -1,4 +1,4 @@
-# Running LLM Locally
+# Running LLMs Locally (langchain, ollama, chromadb)
 
 Project process an list pf pdf document uses mxbai-embed-large for embedding and deepseek-r1:1.5b for LLM.
 Alternative models can be used and tested (pased as parameters).
@@ -17,7 +17,7 @@ The project consist of two distinct runs.
   ```
     ollama pull deepseek-r1:1.5b
     ollama pull mxbai-embed-large
-    ollama help
+    ollama pull llama3.2:1b
 
 - start model serving 
   
@@ -31,7 +31,6 @@ The project consist of two distinct runs.
 - Create new virtual environment
 ```
 conda create -p venv python==3.12
-
 ```
 
 - Activate new virtual environment
@@ -46,3 +45,19 @@ pip install langchain
 pip install -U langchain_community
 pip install -U langchain_ollama
 pip install -U langchain_chroma
+```
+
+- Create Embeddings
+```
+python ./create_embeddings.py
+```
+
+- Query
+```
+- python ./query01.py
+- python ./query01.py
+```
+
+
+### Remarks
+Project is for a quick demo only not with a full blow development mindset.

@@ -4,9 +4,9 @@ import ollama
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
 
-query = "What is Energy?"
+query = "What is OpenAI?"
 embedding_model = "mxbai-embed-large"
-llm_model = "deepseek-r1:1.5b"
+llm_model = "deepseek-r1"
 
 def load_vectordb(embedding_model):
     embeddings = OllamaEmbeddings(model=embedding_model)
@@ -33,7 +33,8 @@ def ollama_llm(query, context,llm_model):
     )
     response_content = response["message"]["content"]
     final_answer = re.sub(r"<think>.*?</think>", "", response_content, flags=re.DOTALL).strip()
-    return final_answer 
+    #return final_answer 
+    return response_content
 
 def rag_chain(query,embedding_model,llm_model):
     print("-"*10)
@@ -45,8 +46,11 @@ def rag_chain(query,embedding_model,llm_model):
     retriever = load_vectordb(embedding_model)
     retrieved_docs = retriever.invoke(query)
     formatted_content = combine_docs(retrieved_docs)
-    print(formatted_content)
+    #print(formatted_content)
     return ollama_llm(query, formatted_content,llm_model)      
 
 
-rag_chain(query,embedding_model,llm_model) 
+output = rag_chain(query,embedding_model,llm_model) 
+print(f"Answer")
+print("-"*10)
+print(output)
