@@ -55,7 +55,7 @@ python ./create_embeddings.py
 - Query
 ```
 - python ./query01.py
-- python ./query01.py
+- python ./query02.py
 ```
 
 
