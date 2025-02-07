@@ -58,6 +58,19 @@ python ./create_embeddings.py
 - python ./query02.py
 ```
 
+## Sample Outputs
+
+<strong>deepseek-r1:1b</strong>
+
+![](./images/Screenshot%202025-02-07%20212329.png)
+
+<strong>llama3.2:1b</strong>
+
+![](./images/Screenshot%202025-02-07%20214803.png)
+
+<strong>deepseek-r1</strong>
+
+![](./images/Screenshot%202025-02-07%20223059.png)
 
 ### Remarks
 Project is for a quick demo only not with a full blow development mindset.
