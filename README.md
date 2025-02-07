@@ -40,8 +40,7 @@ conda activate ./venv
 
 - Deploy requirements
 ```
-pip install chromadb
-pip install langchain
+pip install chromadb langchain gradio pypdf
 pip install -U langchain_community
 pip install -U langchain_ollama
 pip install -U langchain_chroma
@@ -71,6 +70,13 @@ python ./create_embeddings.py
 <strong>deepseek-r1</strong>
 
 ![](./images/Screenshot%202025-02-07%20223059.png)
+
+<strong>Gradio Sample Outputs</strong>
+![](./images/Screenshot%202025-02-08%20020003.png)
+![](./images//Screenshot%202025-02-08%20020151.png)
+![](./images/Screenshot%202025-02-08%20020253.png)
+![](./images/Screenshot%202025-02-08%20020436.png)
+
 
 ### Remarks
 Project is for a quick demo only not with a full blow development mindset.

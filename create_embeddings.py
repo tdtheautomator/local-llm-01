@@ -4,6 +4,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaEmbeddings
 
+embedding_model = "mxbai-embed-large"
 
 def create_embeddings(model_name):    
     source_files = "./docs"
@@ -18,4 +19,4 @@ def create_embeddings(model_name):
     return text_splitter, vectorstore
 
 
-create_embeddings("mxbai-embed-large")
+create_embeddings(embedding_model)
