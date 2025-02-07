@@ -61,6 +61,6 @@ interface = gr.Interface(
        lines = 10,
        show_copy_button=True
        ),
-   title="Chatbot for PDF",
+   title="Query the knowledge base using multiple LLM Models!!!!",
 )
 interface.launch()
