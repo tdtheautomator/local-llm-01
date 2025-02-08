@@ -59,6 +59,11 @@ python ./create_embeddings.py
 
 ## Sample Outputs
 
+<strong>CLI Outputs/strong>
+![](./images/cli.gif)
+
+![](./images/Screenshot%202025-02-09%20021255.png)
+
 <strong>deepseek-r1:1b</strong>
 
 ![](./images/Screenshot%202025-02-07%20212329.png)
