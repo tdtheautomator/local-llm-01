@@ -79,4 +79,4 @@ python ./create_embeddings.py
 
 
 ### Remarks
-Project is for a quick demo only not with a full blow development mindset.
+Project is for a quick demo only.
