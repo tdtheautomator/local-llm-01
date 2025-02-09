@@ -59,7 +59,7 @@ python ./create_embeddings.py
 
 ## Sample Outputs
 
-<strong>CLI Outputs/strong>
+<strong>CLI Outputs</strong>
 ![](./images/cli.gif)
 
 
